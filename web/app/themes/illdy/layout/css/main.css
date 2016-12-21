@@ -80,7 +80,7 @@ h1,h2,h3,h4, h5, h6 {
 
 .front-page-section .section-header h3 {
 	margin: 0 0 30px 0;
-	line-height: 0.6;
+	line-height: 1.1
 	font-weight: 900;
 	font-size: 30px;
 	color: #000;
@@ -2261,6 +2261,11 @@ input[type=submit] {
 	#header .top-header .header-navigation {
 		display: none;
 	}
+    #header .top-header .col-xs-8 {
+        width: 100%;
+        text-align: center;
+    }
+
 
 	.open-responsive-menu {
 		height: 100%;
@@ -2268,7 +2273,7 @@ input[type=submit] {
 		padding: 26px 0;
 		border: none;
 		outline: 0;
-		display: block;
+		display: none;
 		float: right;
 	}
 
