@@ -58,10 +58,7 @@ if ( $post_query->have_posts() || $general_title != '' || $general_entry != '' |
 				</div><!--/.row-->
 			</div><!--/.container-->
 		</div><!--/.section-header-->
-		<?php if ( $button_text ): ?>
-			<a href="<?php echo esc_url( $button_url ); ?>" title="<?php echo esc_attr( $button_text ); ?>" class="latest-news-button"><i class="fa fa-chevron-circle-right"></i><?php echo esc_html( $button_text ); ?>
-			</a>
-		<?php endif; ?>
+
 
 		<?php if ( $post_query->have_posts() ): ?>
 			<div class="section-content">
@@ -90,6 +87,10 @@ if ( $post_query->have_posts() || $general_title != '' || $general_entry != '' |
 								<div class="clearfix"></div>
 							<?php } ?>
 						<?php endwhile; ?>
+						<?php if ( $button_text ): ?>
+							<br><br><a href="<?php echo esc_url( $button_url ); ?>" title="<?php echo esc_attr( $button_text ); ?>" class="latest-news-button"><i class="fa fa-chevron-circle-right"></i><?php echo esc_html( $button_text ); ?>
+							</a>
+						<?php endif; ?>
 					</div><!--/.row-->
 				</div><!--/.container-->
 			</div><!--/.section-content-->
