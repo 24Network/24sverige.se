@@ -11,7 +11,7 @@ get_header();
 
 
 if( get_option( 'show_on_front' ) == 'posts' ): ?>
-	
+
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-7">
@@ -45,7 +45,7 @@ else:
 	$sections_order_sixth_section = get_theme_mod( 'illdy_general_sections_order_sixth_section', 6 );
 	$sections_order_seventh_section = get_theme_mod( 'illdy_general_sections_order_seventh_section', 7 );
 	$sections_order_eighth_section = get_theme_mod( 'illdy_general_sections_order_eighth_section', 8 );
-	
+
 	if( have_posts() ):
 		while( have_posts() ): the_post();
 			$static_page_content = get_the_content();
@@ -93,11 +93,11 @@ else:
 	if( $sections_order_fifth_section ):
 		illdy_sections_order( $sections_order_fifth_section );
 	endif;
-
+	get_template_part( 'sections/front-page-ad', 'none' );
 	if( $sections_order_sixth_section ):
 		illdy_sections_order( $sections_order_sixth_section );
 	endif;
-	
+
 	if( $sections_order_seventh_section ):
 		illdy_sections_order( $sections_order_seventh_section );
 	endif;
