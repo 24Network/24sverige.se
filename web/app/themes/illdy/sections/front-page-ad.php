@@ -20,12 +20,8 @@
 			</div><!--/.container-->
 		</div><!--/.section-header-->
 		<div class="section-content">
-			<div class="container">
-				<div class="row">
-					<!-- Ocast Embed -->
-					<script async src="https://ocast.com/embed.js?id=bkydyyav" id="ocast_embed"></script>
-					<!-- End Ocast Embed -->
-				</div><!--/.row-->
-			</div><!--/.container-->
+			<!-- Ocast Embed -->
+			<script async src="https://ocast.com/embed.js?id=bkydyyav" id="ocast_embed"></script>
+			<!-- End Ocast Embed -->
 		</div><!--/.section-content-->
 	</section><!--/#ads-page.front-page-section-->
